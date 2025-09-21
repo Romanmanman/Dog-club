@@ -1,0 +1,45 @@
+.header {
+  margin-top: 32px;
+  &__logo-image {
+    width: 182px;
+    height: 43px;
+  }
+  &__logo-link {
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  &__container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+  }
+  &__nav-list {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  &__buttons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  &__basket {
+    fill: var(--color-primary-orange);
+    cursor: pointer;
+    &:hover {
+      fill: var(--color-secondary-ornage);
+    }
+  }
+  &__item {
+    width: 130px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,7 @@
+.hero-section {
+  background-image: url('../images/background-hero-section.svg');
+  background-repeat: no-repeat;
+  &__container {
+    display: flex;
+  }
+}

@@ -1,0 +1,13 @@
+.button {
+  padding: 16px 32px;
+  background-color: var(--color-primary-orange);
+  color: var(--color-primary-white);
+  border: none;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--color-secondary-ornage);
+  }
+}

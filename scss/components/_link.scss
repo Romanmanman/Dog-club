@@ -1,0 +1,8 @@
+.link {
+  color: var(--color-primary-black);
+  font-weight: 400;
+  &:hover {
+    color: var(--color-primary-orange);
+    font-weight: 700;
+  }
+}
