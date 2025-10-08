@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dog Club</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="icon" type="image/svg+xml" href="./images/paw.svg" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -48,167 +52,409 @@
         <div class="container">
           <div class="hero-section__container">
             <div class="hero-section__text">
-              <h1>Taking care for your Smart Dog!</h1>
-              <p>
+              <h1 class="hero-section__title">
+                Taking care for your Smart Dog!
+              </h1>
+              <p class="hero-section__description">
                 Human–canine bonding is the relationship between dogs and humans
               </p>
               <button class="button">Explore more</button>
             </div>
-            <img src="./images/hero-dog.png" alt="Black cute dog" />
+            <img
+              class="hero-section__image"
+              src="./images/hero-dog.png"
+              alt="Black cute dog"
+            />
+            <svg class="hero-section__paw1" width="42" height="42">
+              <use href="./images/icons.svg#icon-hero-paw"></use>
+            </svg>
+            <svg class="hero-section__paw2" width="42" height="42">
+              <use href="./images/icons.svg#icon-hero-paw"></use>
+            </svg>
+            <svg class="hero-section__paw3" width="42" height="42">
+              <use href="./images/icons.svg#icon-hero-paw"></use>
+            </svg>
+            <svg class="hero-section__arrow" width="64" height="48">
+              <use href="./images/icons.svg#icon-circle-arrow"></use>
+            </svg>
+            <img
+              class="hero-section__dachshund"
+              src="./images/dachshund.png"
+              alt="Dachshund dog"
+            />
+            <img
+              class="hero-section__husky"
+              src="./images/husky.png"
+              alt="Husky dog"
+            />
+            <img
+              class="hero-section__cockapoo"
+              src="./images/cockapoo.png"
+              alt="Cockapoo dog"
+            />
           </div>
         </div>
       </section>
       <section class="less-talk-section" id="less-talk-section">
-        <img
-          src="./images/shetland-sheepdog.jpg"
-          alt="Lying Shetland Sheepdog"
-        />
-        <h2>Less talk and more walk</h2>
-        <p>
-          Sometimes our career, lifestyle, or routines can make it difficult to
-          provide your pet with the recommended amount of exercise that they
-          need. Which is why, it’s okay to use an extra hand in walking dogs so
-          they are in perfect shape, mentally and physically.
-        </p>
-        <button type="button">Explore more</button>
+        <div class="container">
+          <div class="less-talk-section__container">
+            <img
+              src="./images/shetland-sheepdog.jpg"
+              alt="Lying Shetland Sheepdog"
+            />
+            <div class="less-talk-section__text">
+              <h2 class="title less-talk-section__title">
+                Less talk <br />
+                and more walk
+              </h2>
+              <p class="less-talk-section__description">
+                Sometimes our career, lifestyle, or routines can make it
+                difficult to provide your pet with the recommended amount of
+                exercise that they need. Which is why, it’s okay to use an extra
+                hand in walking dogs so they are in perfect shape, mentally and
+                physically.
+              </p>
+              <button class="button" type="button">Explore more</button>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="services-section" id="services-section">
-        <h2>Services category</h2>
-        <article>
-          <svg width="96" height="96">
-            <use href="./images/icons.svg#icon-grooming"></use>
-          </svg>
-          <h3>Grooming</h3>
-        </article>
-        <article>
-          <svg width="96" height="96">
-            <use href="./images/icons.svg#icon-nutrition"></use>
-          </svg>
-          <h3>Nutrition</h3>
-        </article>
-        <article>
-          <svg width="96" height="96">
-            <use href="./images/icons.svg#icon-training"></use>
-          </svg>
-          <h3>Training</h3>
-        </article>
-        <article>
-          <svg width="96" height="96">
-            <use href="./images/icons.svg#icon-bathing"></use>
-          </svg>
-          <h3>Bathing</h3>
-        </article>
-        <p>more services</p>
-        <svg width="40" height="24">
-          <use href="./images/icons.svg#icon-arrow"></use>
-        </svg>
+        <div class="container">
+          <h2 class="title services-section__title">Services category</h2>
+          <div class="services-section__container">
+            <a href="#">
+              <article class="service-article">
+                <svg class="service-article__image" width="96" height="96">
+                  <use href="./images/icons.svg#icon-grooming"></use>
+                </svg>
+                <h3 class="service-article__title">Grooming</h3>
+              </article>
+            </a>
+            <a href="#">
+              <article class="service-article">
+                <svg class="service-article__image" width="96" height="96">
+                  <use href="./images/icons.svg#icon-nutrition"></use>
+                </svg>
+                <h3 class="service-article__title">Nutrition</h3>
+              </article>
+            </a>
+            <a href="#">
+              <article class="service-article">
+                <svg class="service-article__image" width="96" height="96">
+                  <use href="./images/icons.svg#icon-training"></use>
+                </svg>
+                <h3 class="service-article__title">Training</h3>
+              </article>
+            </a>
+            <a href="#">
+              <article class="service-article">
+                <svg class="service-article__image" width="96" height="96">
+                  <use href="./images/icons.svg#icon-bathing"></use>
+                </svg>
+                <h3 class="service-article__title">Bathing</h3>
+              </article>
+            </a>
+            <div class="services-section__more">
+              <p class="services-section__text">more services</p>
+              <svg class="services-section__arrow" width="40" height="24">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="happy-section" id="happy-section">
-        <h2>Happy customer</h2>
-        <ul>
-          <li>
-            <article>
-              <h3>Christin & Tom</h3>
-              <p>Love the overall workout experience!</p>
-              <ul>
-                <li>
-                  <svg width="32" height="14">
-                    <use href="./images/icons.svg#icon-bone"></use>
-                  </svg>
+        <div class="container">
+          <h2 class="title happy-section__title">Happy customer</h2>
+          <div class="happy-section__container">
+            <button class="happy-section__button prev">
+              <svg class="happy-section__arrow" width="16" height="16">
+                <use href="./images/icons.svg#icon-slider-arrow"></use>
+              </svg>
+            </button>
+            <div class="swiper">
+              <ul class="happy-section__list swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="happy-article">
+                    <img
+                      class="happy-article__image"
+                      src="./images/Christin_Tom.jpg"
+                      alt="Owner Christin with her dog Tom"
+                    />
+                    <div class="happy-article__description">
+                      <h3 class="happy-article__title">Christin & Tom</h3>
+                      <p class="happy-article__comment">
+                        Love the overall workout experience!
+                      </p>
+                      <div class="happy-article__rating">
+                        <ul class="happy-article__rating-list">
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                        <p>5/5</p>
+                      </div>
+                    </div>
+                  </article>
                 </li>
-                <li>
-                  <svg width="32" height="14">
-                    <use href="./images/icons.svg#icon-bone"></use>
-                  </svg>
+                <li class="swiper-slide">
+                  <article class="happy-article">
+                    <img
+                      class="happy-article__image"
+                      src="./images/Anna_Tobby.jpg"
+                      alt="Owner Anna with her dog Tobby"
+                    />
+                    <div class="happy-article__description">
+                      <h3 class="happy-article__title">Anna & Tobby</h3>
+                      <p class="happy-article__comment">
+                        Amazing Products & Delivery on time.
+                      </p>
+                      <div class="happy-article__rating">
+                        <ul class="happy-article__rating-list second">
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                        <p>4/5</p>
+                      </div>
+                    </div>
+                  </article>
                 </li>
-                <li>
-                  <svg width="32" height="14">
-                    <use href="./images/icons.svg#icon-bone"></use>
-                  </svg>
+                <li class="swiper-slide">
+                  <article class="happy-article">
+                    <img
+                      class="happy-article__image"
+                      src="./images/Sindy_Kitch.jpg"
+                      alt="Owner Sindy with her dog Kitch"
+                    />
+                    <div class="happy-article__description">
+                      <h3 class="happy-article__title">Sindy & Kitch</h3>
+                      <p class="happy-article__comment">
+                        Great job with the trainer!
+                      </p>
+                      <div class="happy-article__rating">
+                        <ul class="happy-article__rating-list">
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                        <p>5/5</p>
+                      </div>
+                    </div>
+                  </article>
                 </li>
-                <li>
-                  <svg width="32" height="14">
-                    <use href="./images/icons.svg#icon-bone"></use>
-                  </svg>
+                <li class="swiper-slide">
+                  <article class="happy-article">
+                    <img
+                      class="happy-article__image"
+                      src="./images/Christin_Tom.jpg"
+                      alt="Owner Christin with her dog Tom"
+                    />
+                    <div class="happy-article__description">
+                      <h3 class="happy-article__title">Christin & Tom</h3>
+                      <p class="happy-article__comment">
+                        Love the overall workout experience!
+                      </p>
+                      <div class="happy-article__rating">
+                        <ul class="happy-article__rating-list">
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                        <p>5/5</p>
+                      </div>
+                    </div>
+                  </article>
                 </li>
-                <li>
-                  <svg width="32" height="14">
-                    <use href="./images/icons.svg#icon-bone"></use>
-                  </svg>
+                <li class="swiper-slide">
+                  <article class="happy-article">
+                    <img
+                      class="happy-article__image"
+                      src="./images/Anna_Tobby.jpg"
+                      alt="Owner Anna with her dog Tobby"
+                    />
+                    <div class="happy-article__description">
+                      <h3 class="happy-article__title">Anna & Tobby</h3>
+                      <p class="happy-article__comment">
+                        Amazing Products & Delivery on time.
+                      </p>
+                      <div class="happy-article__rating">
+                        <ul class="happy-article__rating-list second">
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                        <p>4/5</p>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="happy-article">
+                    <img
+                      class="happy-article__image"
+                      src="./images/Sindy_Kitch.jpg"
+                      alt="Owner Sindy with her dog Kitch"
+                    />
+                    <div class="happy-article__description">
+                      <h3 class="happy-article__title">Sindy & Kitch</h3>
+                      <p class="happy-article__comment">
+                        Great job with the trainer!
+                      </p>
+                      <div class="happy-article__rating">
+                        <ul class="happy-article__rating-list">
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                          <li>
+                            <svg width="32" height="14">
+                              <use href="./images/icons.svg#icon-bone"></use>
+                            </svg>
+                          </li>
+                        </ul>
+                        <p>5/5</p>
+                      </div>
+                    </div>
+                  </article>
                 </li>
               </ul>
-              <p>5/5</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3>Anna & Tobby</h3>
-              <p>Amazing Products & Delivery on time.</p>
-              <ul>
-                <li>
-                  <svg width="32" height="14">
-                    <use href="./images/icons.svg#icon-bone"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg width="32" height="14">
-                    <use href="./images/icons.svg#icon-bone"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg width="32" height="14">
-                    <use href="./images/icons.svg#icon-bone"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg width="32" height="14">
-                    <use href="./images/icons.svg#icon-bone"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg width="32" height="14">
-                    <use href="./images/icons.svg#icon-bone"></use>
-                  </svg>
-                </li>
-              </ul>
-              <p>4/5</p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3>Sindy & Kitch</h3>
-              <p>Great job with the trainer!</p>
-              <ul>
-                <li>
-                  <svg width="32" height="14">
-                    <use href="./images/icons.svg#icon-bone"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg width="32" height="14">
-                    <use href="./images/icons.svg#icon-bone"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg width="32" height="14">
-                    <use href="./images/icons.svg#icon-bone"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg width="32" height="14">
-                    <use href="./images/icons.svg#icon-bone"></use>
-                  </svg>
-                </li>
-                <li>
-                  <svg width="32" height="14">
-                    <use href="./images/icons.svg#icon-bone"></use>
-                  </svg>
-                </li>
-              </ul>
-              <p>5/5</p>
-            </article>
-          </li>
-        </ul>
+              <div class="pagination"></div>
+            </div>
+            <button class="happy-section__button next">
+              <svg class="happy-section__arrow next" width="16" height="16">
+                <use href="./images/icons.svg#icon-slider-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
       <section class="contact-section" id="contact-section">
         <img src="./images/dog-with-leash.jpg" alt="Dog with leash" />
@@ -304,5 +550,7 @@
       </form>
       <img src="./images/puppy.jpg" alt="Puppy" />
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>

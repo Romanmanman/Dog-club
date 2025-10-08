@@ -1,0 +1,18 @@
+.less-talk-section {
+  &__container {
+    display: flex;
+    gap: 24px;
+  }
+  &__text {
+    padding-top: 155px;
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+}

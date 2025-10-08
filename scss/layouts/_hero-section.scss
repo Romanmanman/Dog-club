@@ -1,7 +1,81 @@
 .hero-section {
   background-image: url('../images/background-hero-section.svg');
   background-repeat: no-repeat;
+  background-position: top left;
   &__container {
     display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__text {
+    padding-top: 212px;
+  }
+  &__image {
+    padding: 235px 0 60px 0;
+    width: 506px;
+  }
+  &__title {
+    max-width: 635px;
+    font-family: 'Rowdies', sans-serif;
+    font-weight: 400;
+    font-size: 72px;
+    letter-spacing: 0.05em;
+    margin-bottom: 40px;
+  }
+  &__description {
+    max-width: 500px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+  &__paw1 {
+    position: absolute;
+    top: 280px;
+    right: 460px;
+    fill: var(--color-secondary-purple);
+  }
+  &__paw2 {
+    position: absolute;
+    top: 590px;
+    right: 550px;
+    fill: var(--color-secondary-ornage);
+    rotate: 240deg;
+  }
+  &__paw3 {
+    position: absolute;
+    top: 400px;
+    right: -40px;
+    fill: var(--color-secondary-pink);
+    rotate: 80deg;
+  }
+  &__arrow {
+    position: absolute;
+    top: 160px;
+    right: 730px;
+    fill: var(--color-secondary-ornage);
+  }
+  &__dachshund {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 180px;
+    right: 330px;
+  }
+  &__husky {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 450px;
+    right: 570px;
+  }
+  &__cockapoo {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 280px;
+    right: 20px;
   }
 }

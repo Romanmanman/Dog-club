@@ -34,6 +34,7 @@
   &__basket {
     fill: var(--color-primary-orange);
     cursor: pointer;
+    transition: fill 0.2s linear;
     &:hover {
       fill: var(--color-secondary-ornage);
     }

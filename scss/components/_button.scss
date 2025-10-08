@@ -7,6 +7,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   cursor: pointer;
+  transition: background-color 0.2s linear;
   &:hover {
     background-color: var(--color-secondary-ornage);
   }
